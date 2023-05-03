@@ -1,0 +1,69 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: white;
+    border-color: white;
+}
+
+li:hover {
+    color: black;
+    background-color: black;
+}
+.navbar-toggle{
+    background-color:black;
+}
+.icon-bar{
+    background-color: white;
+}
+
+
+.navbar_main {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+}
+
+a{
+    color: #B61E03;
+  
+}
+
+.nav-hover{
+    list-style:none;
+   
+}
+.nav-hover > a:hover{
+    text-decoration:none;
+    color:black;
+    background-color:white;
+}
+
+
+.nav_Again > li {
+    list-style: none;
+    margin-right:50px;
+    font-size:16px;
+}
+
+/* HAKKIMIZDA SAYFASI MAİN SAYFA*/
+
+main_container{
+
+}
+.main_container > div{
+    width:50%;
+    margin: 0 auto;
+}
