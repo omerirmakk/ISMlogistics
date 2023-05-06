@@ -1,69 +1,45 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 20px;
+    width:100%;
+   
+}
+p{
+    font-weight:500;
+    font-size:30px;
+}
+h1{
+    font-weight:800;
+    font-size:90px;
+}
 
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
-
-.navbar-inverse .navbar-toggle:hover,
-.navbar-inverse .navbar-toggle:focus {
-    background-color: white;
-    border-color: white;
-}
-
-li:hover {
-    color: black;
-    background-color: black;
-}
-.navbar-toggle{
-    background-color:black;
-}
-.icon-bar{
-    background-color: white;
-}
-
-
-.navbar_main {
-    background-color: white;
-    color: black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-around;
-}
-
-a{
+.layout_title {
     color: #B61E03;
-  
+    opacity:.4;
+    transition: ease-in-out 0.6s;
+}
+.layout_title:hover{
+    opacity:1;
+}
+footer{
+    
+    opacity: .8;
 }
 
-.nav-hover{
-    list-style:none;
+.flex_items{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:10px;
    
-}
-.nav-hover > a:hover{
-    text-decoration:none;
-    color:black;
-    background-color:white;
-}
-
-
-.nav_Again > li {
-    list-style: none;
-    margin-right:50px;
-    font-size:16px;
-}
-
-/* HAKKIMIZDA SAYFASI MAİN SAYFA*/
-
-main_container{
-
-}
-.main_container > div{
-    width:50%;
-    margin: 0 auto;
 }

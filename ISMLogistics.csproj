@@ -131,6 +131,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Jscript.js" />
     <Content Include="Content\mainstyle.css">
       <DependentUpon>mainstyle.scss</DependentUpon>
     </Content>
@@ -143,8 +144,11 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="wwwroot\images\envelope.svg" />
+    <Content Include="wwwroot\images\handshake.svg" />
     <Content Include="wwwroot\images\ismlogo.jpg" />
     <Content Include="Content\mainstyle.scss" />
+    <Content Include="wwwroot\images\konteyner.mp4" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
@@ -171,9 +175,10 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Kurumsal.cshtml" />
+    <Content Include="Views\Home\Hizmetlerimiz.cshtml" />
+    <Content Include="Views\Home\İletişim.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
