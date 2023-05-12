@@ -6,42 +6,55 @@
     <title>@ViewBag.Title</title>
     <link href="~/Content/mainstyle.min.css" rel="stylesheet" />
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-
+    <link href="~/Content/Site.css" rel="stylesheet" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
     <div class="navbar_main">
-
         <ul class="nav_again">
             <li class="nav"><a href="/"><img style="width: 150px" src="~/wwwroot/images/ismlogo.jpg" /></a></li>
         </ul>
         <ul class="nav_again">
-            <li class="nav-hover ">@Html.ActionLink("Home", "Index", "Home")</li>
+            <li class="nav-hover">@Html.ActionLink("Anasayfa", "Index", "Home")</li>
             <li class="nav-hover">@Html.ActionLink("Kurumsal", "Kurumsal", "Home")</li>
-            <li class="nav-hover">@Html.ActionLink("Our services", "Hizmetlerimiz", "Home")</li>
-            <li class="nav-hover">@Html.ActionLink("Contact", "İletişim", "Home")</li>
+            <li class="nav-hover parent-link">@Html.ActionLink("Hizmetlerimiz", "Hizmetlerimiz", "Home")  
+                <div class="sub-links">
+                  <span>
+                    @Html.ActionLink("Havayolu Taşımacılığı", "HavaYoluTasimaciligi", "Hizmetlerimiz")
+                      </span>
+                    @Html.ActionLink("Karayolu Taşımacılığı", "KarayoluTasimaciligi", "Hizmetlerimiz")
+                    @Html.ActionLink("Denizyolu Taşımacılığı", "DenizYoluTasimaciligi", "Hizmetlerimiz")
+                    @Html.ActionLink("Silah ve Mühimmat Taşımacılığı", "SilahveMuhimmatTasimaciligi", "Hizmetlerimiz")
+                    @Html.ActionLink("Zati Eşya Taşımacılığı", "ZatiEsyaTasimaciligi", "Hizmetlerimiz")
+                    @Html.ActionLink("Yurt İçi Dağıtım ve Depolama Hizmetleri", "DepolamaHizmetleri", "Hizmetlerimiz")
+                   <span>
+                    @Html.ActionLink("Sigorta Hizmetleri", "Sigorta", "Hizmetlerimiz")
+                       </span>
+                    @Html.ActionLink("Danışmanlık Hizmetleri", "Danismanlik", "Hizmetlerimiz")
+                </div>
+            </li>
+            <li class="nav-hover">@Html.ActionLink("İletişim", "İletişim", "Home")</li>
         </ul>
-        @*<ul class="nav_again">
-            <li class="nav-hover active"><a href="/Home/Index" class="nav-link">Home</a></li>
-            <li class="nav-hover"><a href="/Home/Kurumsal" class="nav-link">Kurumsal</a></li>
-            <li class="nav-hover"><a href="/Home/Hizmetlerimiz" class="nav-link">Our services</a></li>
-            <li class="nav-hover"><a href="/Home/İletişim" class="nav-link">Contact</a></li>
-        </ul>*@
-
     </div>
     <div class="container body-content">
         @RenderBody()
         
         <hr />
         <footer>
+            <div>
+                <a href="/Home/Hizmetlerimiz"><h2>Our services</h2></a>
+                
+            </div>
+            <div>
+                <h2>Contact</h2>
             <address class="flex_items">
                 <p class="flex_items">
                     <i class="fi fi-sr-marker"></i>
                     Maslak Mah. Ahi Evran Cad. 42 Maslak 4/542
                     34398 SARIYER İSTANBUL / TÜRKİYE
                 </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.913081203791!2d29.021749311178517!3d41.11458931017649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab5be34340059%3A0xb290bf71d730dc2f!2sMaslak%20Mh%2C%20Ahi%20Evran%20Cd.%20No%3A4%20D%3A42%2C%2034398%20Sar%C4%B1yer%2F%C4%B0stanbul!5e0!3m2!1sen!2str!4v1683315514198!5m2!1sen!2str" width="400" height="300" style="border:0; flex:50%; border-radius:15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            @*<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.913081203791!2d29.021749311178517!3d41.11458931017649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab5be34340059%3A0xb290bf71d730dc2f!2sMaslak%20Mh%2C%20Ahi%20Evran%20Cd.%20No%3A4%20D%3A42%2C%2034398%20Sar%C4%B1yer%2F%C4%B0stanbul!5e0!3m2!1sen!2str!4v1683315514198!5m2!1sen!2str" width="400" height="300" style="border:0; flex:50%; border-radius:15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>*@
             </address>
             <address >
                 <div class="flex_items">
@@ -58,8 +71,9 @@
                 </div>
 
             </address>
-            <p>&copy; @DateTime.Now.Year - ISM Logistics</p>
+            </div>
         </footer>
+            <div>&copy; @DateTime.Now.Year - ISM Logistics</div>
     </div>
     <script src="~/Content/Jscript.js"></script>
     @Scripts.Render("~/bundles/jquery")

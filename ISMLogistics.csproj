@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HizmetlerimizController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -146,6 +147,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="wwwroot\images\envelope.svg" />
     <Content Include="wwwroot\images\handshake.svg" />
+    <Content Include="wwwroot\images\hava.png" />
     <Content Include="wwwroot\images\ismlogo.jpg" />
     <Content Include="Content\mainstyle.scss" />
     <Content Include="wwwroot\images\konteyner.mp4" />
@@ -179,6 +181,14 @@
     <Content Include="Views\Home\Kurumsal.cshtml" />
     <Content Include="Views\Home\Hizmetlerimiz.cshtml" />
     <Content Include="Views\Home\İletişim.cshtml" />
+    <Content Include="Views\Hizmetlerimiz\HavaYoluTasimaciligi.cshtml" />
+    <Content Include="Views\Hizmetlerimiz\KarayoluTasimaciligi.cshtml" />
+    <Content Include="Views\Hizmetlerimiz\DenizYoluTasimaciligi.cshtml" />
+    <Content Include="Views\Hizmetlerimiz\DepolamaHizmetleri.cshtml" />
+    <Content Include="Views\Hizmetlerimiz\ZatiEsyaTasimaciligi.cshtml" />
+    <Content Include="Views\Hizmetlerimiz\SilahveMuhimmatTasimaciligi.cshtml" />
+    <Content Include="Views\Hizmetlerimiz\Sigorta.cshtml" />
+    <Content Include="Views\Hizmetlerimiz\Danismanlik.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -7,8 +7,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     padding-bottom: 20px;
-    width:100%;
-   
+    width: 100%;
 }
 p{
     font-weight:500;
@@ -32,8 +31,17 @@ h1{
     opacity:1;
 }
 footer{
-    
+    display:flex;
+    flex-direction:row;
     opacity: .8;
+    align-items:flex-start;
+    justify-content:flex-end;
+}
+footer > div:nth-child(1){
+    flex:50%;
+}
+footer > div:nth-child(2) {
+    flex: 50%;
 }
 
 .flex_items{
@@ -42,4 +50,83 @@ footer{
     align-items:center;
     gap:10px;
    
+}
+.flex_items > p {
+    font-size: 1.7rem;
+}
+
+.parent-link {
+    position: relative;
+    transition: ease-in-out .7s;
+}
+
+.sub-links {
+    display: none;
+    background-color: darkslategrey;
+    width: 120px;
+    margin-top:4px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 1px solid black;
+    padding: 5px;
+    
+}
+.parent-link:hover .sub-links {
+    display: flex;
+    flex-direction:column;
+    text-align:left;
+    gap:10px;
+    padding:5px;
+   
+    
+}
+.sub-links a:hover{
+   color:white !important;
+
+     
+ }
+
+.bg-nav{
+     background-color: rgb(254, 254, 254) !important;
+     border-radius: 20px;
+ }
+
+.sub-links span a::after{
+    content:"";
+    width:20px;
+    height:1px;
+
+}
+
+
+/* extra*/
+svg {
+    width: 100%;
+}
+
+.filled-heading {
+    text-transform: uppercase;
+    text-align:center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: .9;
+}
+
+#background path {
+    animation: pulse 7s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+
+@keyframes pulse {
+    
+    0%, 100% {
+        transform: scale(0) rotate(275deg);
+    }
+
+    35%, 65% {
+        transform: scale(3) rotate(0deg);
+    }
 }

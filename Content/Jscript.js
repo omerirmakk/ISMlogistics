@@ -1,6 +1,15 @@
-﻿const slider = document.querySelector(".slider");
-const slides = slider.querySelector(".slides");
-const slideWidth = slider.clientWidth / 3; // adjust based on the maximum number of slides to display
+﻿window.addEventListener("scroll", () => {
+    const navbar = document.querySelector(".navbar_main");
+
+    if (window.pageYOffset > 0) {
+        navbar.classList.add("bg-nav");
+    };
+})
+
+
+const slider = document.querySelector('.slider');
+const slides = document.querySelector('.slides');
+const slideWidth = slider.clientWidth / 3;
 let currentIndex = 0;
 
 function goToSlide(index) {
