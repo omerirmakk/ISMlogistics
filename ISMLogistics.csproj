@@ -145,12 +145,24 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="wwwroot\images\envelope.svg" />
-    <Content Include="wwwroot\images\handshake.svg" />
+    <Content Include="wwwroot\images\1324567.jpg" />
+    <Content Include="wwwroot\images\balance-scale.png" />
+    <Content Include="wwwroot\images\handshake %281%29.png" />
+    <Content Include="wwwroot\images\danışmanlık.png" />
+    <Content Include="wwwroot\images\deniz.png" />
+    <Content Include="wwwroot\images\depo %283%29.png" />
+    <Content Include="wwwroot\images\hava %283%29.png" />
     <Content Include="wwwroot\images\hava.png" />
-    <Content Include="wwwroot\images\ismlogo.jpg" />
     <Content Include="Content\mainstyle.scss" />
-    <Content Include="wwwroot\images\konteyner.mp4" />
+    <Content Include="wwwroot\images\kara %282%29.png" />
+    <Content Include="wwwroot\images\kara.png" />
+    <Content Include="wwwroot\images\lojistik %282%29.png" />
+    <Content Include="wwwroot\images\save-the-planet %281%29.png" />
+    <Content Include="wwwroot\images\sigorta %282%29.png" />
+    <Content Include="wwwroot\images\social.png" />
+    <Content Include="wwwroot\images\thinking.png" />
+    <Content Include="wwwroot\images\tır kara.png" />
+    <Content Include="wwwroot\images\value.png" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
@@ -189,6 +201,17 @@
     <Content Include="Views\Hizmetlerimiz\SilahveMuhimmatTasimaciligi.cshtml" />
     <Content Include="Views\Hizmetlerimiz\Sigorta.cshtml" />
     <Content Include="Views\Hizmetlerimiz\Danismanlik.cshtml" />
+    <Content Include="wwwroot\svgss\anasayfa.webp" />
+    <Content Include="wwwroot\svgss\danısmanlikk.webp" />
+    <Content Include="wwwroot\svgss\denizyolu.webp" />
+    <Content Include="wwwroot\svgss\depolama.webp" />
+    <Content Include="wwwroot\svgss\hakkımızda.webp" />
+    <Content Include="wwwroot\svgss\havayolu.webp" />
+    <Content Include="wwwroot\svgss\iletisim.webp" />
+    <Content Include="wwwroot\svgss\insurance.webp" />
+    <Content Include="wwwroot\svgss\karayolu.webp" />
+    <Content Include="wwwroot\svgss\kurumsal.webp" />
+    <Content Include="wwwroot\svgss\silahvemuhimmat.webp" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

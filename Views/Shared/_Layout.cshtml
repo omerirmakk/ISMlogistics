@@ -12,68 +12,86 @@
 </head>
 <body>
     <div class="navbar_main">
-        <ul class="nav_again">
-            <li class="nav"><a href="/"><img style="width: 150px" src="~/wwwroot/images/ismlogo.jpg" /></a></li>
+       <button class="toggle_button">+</button>
+        <ul class="nav_againn">
+            <li class="nav"><a href="/"><img style="width: 200px; margin-top:10px;" src="~/wwwroot/images/1324567.jpg" /></a></li>
         </ul>
         <ul class="nav_again">
             <li class="nav-hover">@Html.ActionLink("Anasayfa", "Index", "Home")</li>
             <li class="nav-hover">@Html.ActionLink("Kurumsal", "Kurumsal", "Home")</li>
-            <li class="nav-hover parent-link">@Html.ActionLink("Hizmetlerimiz", "Hizmetlerimiz", "Home")  
-                <div class="sub-links">
-                  <span>
+            <li class="parent-link">
+                @Html.ActionLink("Hizmetlerimiz", "HavaYoluTasimaciligi", "Hizmetlerimiz")
+            <div class="sub-links">
+              
+
+                @Html.ActionLink("Havayolu Taşımacılığı", "HavaYoluTasimaciligi", "Hizmetlerimiz")
+                @Html.ActionLink("Karayolu Taşımacılığı", "KarayoluTasimaciligi", "Hizmetlerimiz")
+                @Html.ActionLink("Denizyolu Taşımacılığı", "DenizYoluTasimaciligi", "Hizmetlerimiz")
+                @Html.ActionLink("Silah ve Mühimmat Taşımacılığı", "SilahveMuhimmatTasimaciligi", "Hizmetlerimiz")
+                @Html.ActionLink("Depolama Hizmetleri", "DepolamaHizmetleri", "Hizmetlerimiz")
+                @Html.ActionLink("Sigorta Hizmetleri", "Sigorta", "Hizmetlerimiz")
+                @Html.ActionLink("Danışmanlık Hizmetleri", "Danismanlik", "Hizmetlerimiz")
+    
+            </div>
+        </li>
+        <li class="nav-hover">@Html.ActionLink("İletişim", "İletişim", "Home")</li>
+    </ul>
+    </div>
+    <div class="">
+        @RenderBody()
+
+        
+        <hr />
+        <div class="container body-content" >
+            <footer style="font-size:1rem ;">
+                <div class="footer_first_div">
+                    <h2>Hizmetlerimiz</h2>
+
+
                     @Html.ActionLink("Havayolu Taşımacılığı", "HavaYoluTasimaciligi", "Hizmetlerimiz")
-                      </span>
+
                     @Html.ActionLink("Karayolu Taşımacılığı", "KarayoluTasimaciligi", "Hizmetlerimiz")
                     @Html.ActionLink("Denizyolu Taşımacılığı", "DenizYoluTasimaciligi", "Hizmetlerimiz")
                     @Html.ActionLink("Silah ve Mühimmat Taşımacılığı", "SilahveMuhimmatTasimaciligi", "Hizmetlerimiz")
-                    @Html.ActionLink("Zati Eşya Taşımacılığı", "ZatiEsyaTasimaciligi", "Hizmetlerimiz")
-                    @Html.ActionLink("Yurt İçi Dağıtım ve Depolama Hizmetleri", "DepolamaHizmetleri", "Hizmetlerimiz")
-                   <span>
+                    @Html.ActionLink("Depolama Hizmetleri", "DepolamaHizmetleri", "Hizmetlerimiz")
                     @Html.ActionLink("Sigorta Hizmetleri", "Sigorta", "Hizmetlerimiz")
-                       </span>
+
                     @Html.ActionLink("Danışmanlık Hizmetleri", "Danismanlik", "Hizmetlerimiz")
                 </div>
-            </li>
-            <li class="nav-hover">@Html.ActionLink("İletişim", "İletişim", "Home")</li>
-        </ul>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        
-        <hr />
-        <footer>
-            <div>
-                <a href="/Home/Hizmetlerimiz"><h2>Our services</h2></a>
-                
-            </div>
-            <div>
-                <h2>Contact</h2>
-            <address class="flex_items">
-                <p class="flex_items">
-                    <i class="fi fi-sr-marker"></i>
-                    Maslak Mah. Ahi Evran Cad. 42 Maslak 4/542
-                    34398 SARIYER İSTANBUL / TÜRKİYE
-                </p>
-            @*<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.913081203791!2d29.021749311178517!3d41.11458931017649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab5be34340059%3A0xb290bf71d730dc2f!2sMaslak%20Mh%2C%20Ahi%20Evran%20Cd.%20No%3A4%20D%3A42%2C%2034398%20Sar%C4%B1yer%2F%C4%B0stanbul!5e0!3m2!1sen!2str!4v1683315514198!5m2!1sen!2str" width="400" height="300" style="border:0; flex:50%; border-radius:15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>*@
-            </address>
-            <address >
-                <div class="flex_items">
-                <i class="fi fi-sr-phone-call" style="font-size:30px;"></i>
-                <p>+90 535 817 53 98</p>
-                </div>
-                </address>
-                <address>
-                <div class="flex_items">
-                 <i class="fi fi-sr-envelope" style="font-size:30px";></i>
-                <p>
-                <a href="mailto:info@ismlogistic.com.tr">info@ismlogistic.com.tr</a><br />
-                </p>
-                </div>
+                <div style="font-size:1rem;">
+                    <h2>İletişim</h2>
 
-            </address>
-            </div>
-        </footer>
-            <div>&copy; @DateTime.Now.Year - ISM Logistics</div>
+                    <address class="flex_items" style="font-size:1rem !important;">
+                        <span class="flex_items_col">
+                            <span class="flex_items">
+                                <i class="fi fi-sr-marker"></i>
+                                <span>
+                                    MASLAK MAH. AOS 55. SK. 42 MASLAK B BLOK NO: 4 İÇ KAPI NO: 542 SARIYER
+                                    İSTANBUL/TÜRKİYE
+
+                                </span>
+                            </span>
+                            <span class="flex_items">
+
+                                <i class="fi fi-sr-phone-call"></i>
+                                <span>+90 535 817 53 98</span>
+                            </span>
+                            <span class="flex_items">
+
+                                <i class="fi fi-sr-envelope"></i>
+                                <span>
+                                    <a href="mailto:info@ismlogistic.com.tr">info@ismlogistic.com.tr</a><br />
+                                </span>
+                            </span>
+
+                        </span>
+
+                    </address>
+                </div>
+            </footer> 
+            <div style="margin-top:20rem;">&copy; @DateTime.Now.Year - ISM Logistics</div>
+            <div>Made by <a style="color:black;text-decoration:none;" target="_blank" href="https://github.com/omerirmakk">Omer</a></div>
+        </div> 
     </div>
     <script src="~/Content/Jscript.js"></script>
     @Scripts.Render("~/bundles/jquery")

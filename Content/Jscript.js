@@ -33,3 +33,17 @@ function goToPrevSlide() {
 
 document.querySelector(".prev").addEventListener("click", goToPrevSlide);
 document.querySelector(".next").addEventListener("click", goToNextSlide);
+
+//document.querySelector(".toggle_button").addEventListener("click", function () {
+//    document.querySelector(".nav_again").classList.toggle("hidden-visible");
+//});
+
+function toggleMenu() {
+    var navMenu = document.querySelector('.nav_again');
+    navMenu.classList.toggle('hidden-visible');
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    var toggleButton = document.querySelector('.toggle_button');
+    toggleButton.addEventListener('click', toggleMenu);
+});

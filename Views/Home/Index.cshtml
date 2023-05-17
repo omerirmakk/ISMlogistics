@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "ISM LOGISTICS";
 }
 <head>
 
@@ -7,65 +7,68 @@
  
 </head>
 <body>
+    <div class=home_main>
+        <div>
+            <h1>ISM LOJİSTİK</h1>
+            <h3>INTERNATIONAL SUPPLY MANAGAMENT</h3>
+            <p>Dünya çapındaki güçlü bağlantılarımız<br /> ile daha önce deneyimlemediğiniz bir<br /> lojistik hizmeti sunuyoruz.</p>
 
-    <div class="home_main_container">
+            <button onclick="location.href = '#home_main2';">
 
-        <h1 class="layout_title" style="text-align:left;">About us</h1>
-        <p>
-            As ISM logistics, we were established in Istanbul, which takes the pulse of the industry, with an innovative perspective.<br /><br />
+                DAHA FAZLA
+            </button>
 
-            With our strong connections around the world, we offer a logistics service that you have not experienced before.<br /><br />
+        </div>
+    </div>
 
-            In addition to our young and dynamic team, we aim to provide specific and solution-oriented services with our experienced staff of more than 10 years in the industry.
-        </p>
+    <div id=home_main2>
+        <div>
+            <h1>HAKKIMIZDA</h1>
+            <p>ISM Lojistik olarak, yenilikçi bakış açısıyla sektörün nabzını tutan İstanbul’da kurulduk.<br/><br /><br /> Genç ve dinamik ekibimiz yanı sıra sektörde 10 yılı aşkın deneyimli kadromuz ile spesifik ve çözüm odaklı hizmet sunmaktayız. </p>
+            <button onclick="location.href = '/Home/Kurumsal';">
+
+                DAHA FAZLA
+            </button>
+
+        </div>
+    </div>
+    <div class="home_main_container container body-content">
+
+      
 
         <h1 class="layout_title" style="text-align:center; margin-top: 10%;">Hizmetlerimiz</h1>
 
         <div class="slider">
             <div class="slides">
                 <div class="slide">
-                    <div class="card">
-                        <div class="card-body">INTERNATIONAL AIR TRANSPORT</div>
+                    <div class="card card1">
+                        <div class="card-body"> HAVAYOLU TAŞIMACILIĞI</div>
                     </div>
                 </div>
                 <div class="slide">
-                    <div class="card">
-                        <div class="card-body">INTERNATIONAL ROAD TRANSPORT</div>
+                    <div class="card card2">
+                        <div class="card-body"> KARAYOLU TAŞIMACILIĞI</div>
                     </div>
                 </div>
                 <div class="slide">
-                    <div class="card">
-                        <div class="card-body">INTERNATIONAL MARITIME TRANSPORT</div>
+                    <div class="card card3">
+                        <div class="card-body"> DENİZYOLU TAŞIMACILIĞI</div>
+                    </div>
+                </div>
+          
+                <div class="slide">
+                    <div class="card card7">
+                        <div class="card-body"> DEPOLAMA HİZMETLERİ</div>
                     </div>
                 </div>
                 <div class="slide">
-                    <div class="card">
-                        <div class="card-body">MICRO EXPORT SERVICES</div>
+                    <div class="card card8">
+                        <div class="card-body">SİGORTA HİZMETLERİ</div>
                     </div>
                 </div>
                 <div class="slide">
-                    <div class="card">
-                        <div class="card-body">INTERNATIONAL FREIGHT TRANSIT</div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="card">
-                        <div class="card-body">INTERNATIONAL PERSONAL EFFECT TRANSPORT</div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="card">
-                        <div class="card-body">DOMESTIC DISTRIBUTION AND STORAGE SERVICES</div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="card">
-                        <div class="card-body">INSURANCE SERVICES</div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="card">
-                        <div class="card-body">CONSULTANCY</div>
+                    <div class="card card9">
+                        <div class="card-body">DANIŞMANLIK HİZMETLERİ</div>
                     </div>
                 </div>
             </div>
@@ -76,5 +79,6 @@
 
     </div>
 
-<script src="~/Content/Jscript.js"></script>
+
+    <script src="~/Content/Jscript.js"></script>
 </body>
