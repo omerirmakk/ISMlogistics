@@ -145,6 +145,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="wwwroot\icons8-menu-48.png" />
     <Content Include="wwwroot\images\1324567.jpg" />
     <Content Include="wwwroot\images\balance-scale.png" />
     <Content Include="wwwroot\images\handshake %281%29.png" />
@@ -156,6 +157,7 @@
     <Content Include="Content\mainstyle.scss" />
     <Content Include="wwwroot\images\kara %282%29.png" />
     <Content Include="wwwroot\images\kara.png" />
+    <Content Include="wwwroot\images\logoson.png" />
     <Content Include="wwwroot\images\lojistik %282%29.png" />
     <Content Include="wwwroot\images\save-the-planet %281%29.png" />
     <Content Include="wwwroot\images\sigorta %282%29.png" />

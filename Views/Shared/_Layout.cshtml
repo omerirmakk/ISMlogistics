@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
-    <link href="~/Content/mainstyle.min.css" rel="stylesheet" />
+    <link href="/Content/mainstyle.min.css" rel="stylesheet" />
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link href="~/Content/Site.css" rel="stylesheet" />
     @Styles.Render("~/Content/css")
@@ -12,32 +12,33 @@
 </head>
 <body>
     <div class="navbar_main">
-       <button class="toggle_button">+</button>
+        <button type="button" class="toggle_button" style="border:none;background-color:transparent;" data-toggle="button" aria-pressed="false" autocomplete="off"><img src="~/wwwroot/icons8-menu-48.png" /></button>
         <ul class="nav_againn">
-            <li class="nav"><a href="/"><img style="width: 200px; margin-top:10px;" src="~/wwwroot/images/1324567.jpg" /></a></li>
+            <li class="nav">
+            <a href="/">
+                <img style="width: 200px; margin-top:10px;" src="~/wwwroot/images/logoson.png" />
+                </a>
+            </li>
         </ul>
         <ul class="nav_again">
             <li class="nav-hover">@Html.ActionLink("Anasayfa", "Index", "Home")</li>
             <li class="nav-hover">@Html.ActionLink("Kurumsal", "Kurumsal", "Home")</li>
             <li class="parent-link">
                 @Html.ActionLink("Hizmetlerimiz", "HavaYoluTasimaciligi", "Hizmetlerimiz")
-            <div class="sub-links">
-              
-
-                @Html.ActionLink("Havayolu Taşımacılığı", "HavaYoluTasimaciligi", "Hizmetlerimiz")
-                @Html.ActionLink("Karayolu Taşımacılığı", "KarayoluTasimaciligi", "Hizmetlerimiz")
-                @Html.ActionLink("Denizyolu Taşımacılığı", "DenizYoluTasimaciligi", "Hizmetlerimiz")
-                @Html.ActionLink("Silah ve Mühimmat Taşımacılığı", "SilahveMuhimmatTasimaciligi", "Hizmetlerimiz")
-                @Html.ActionLink("Depolama Hizmetleri", "DepolamaHizmetleri", "Hizmetlerimiz")
-                @Html.ActionLink("Sigorta Hizmetleri", "Sigorta", "Hizmetlerimiz")
-                @Html.ActionLink("Danışmanlık Hizmetleri", "Danismanlik", "Hizmetlerimiz")
-    
-            </div>
-        </li>
-        <li class="nav-hover">@Html.ActionLink("İletişim", "İletişim", "Home")</li>
-    </ul>
+                <div class="sub-links">
+                    @Html.ActionLink("Havayolu Taşımacılığı", "HavaYoluTasimaciligi", "Hizmetlerimiz")
+                    @Html.ActionLink("Karayolu Taşımacılığı", "KarayoluTasimaciligi", "Hizmetlerimiz")
+                    @Html.ActionLink("Denizyolu Taşımacılığı", "DenizYoluTasimaciligi", "Hizmetlerimiz")
+                    @Html.ActionLink("Silah ve Mühimmat Taşımacılığı", "SilahveMuhimmatTasimaciligi", "Hizmetlerimiz")
+                    @Html.ActionLink("Depolama Hizmetleri", "DepolamaHizmetleri", "Hizmetlerimiz")
+                    @Html.ActionLink("Sigorta Hizmetleri", "Sigorta", "Hizmetlerimiz")
+                    @Html.ActionLink("Danışmanlık Hizmetleri", "Danismanlik", "Hizmetlerimiz")
+                </div>
+            </li>
+            <li class="nav-hover">@Html.ActionLink("İletişim", "İletişim", "Home")</li>
+        </ul>
     </div>
-    <div class="">
+    <div >
         @RenderBody()
 
         
@@ -46,21 +47,16 @@
             <footer style="font-size:1rem ;">
                 <div class="footer_first_div">
                     <h2>Hizmetlerimiz</h2>
-
-
                     @Html.ActionLink("Havayolu Taşımacılığı", "HavaYoluTasimaciligi", "Hizmetlerimiz")
-
                     @Html.ActionLink("Karayolu Taşımacılığı", "KarayoluTasimaciligi", "Hizmetlerimiz")
                     @Html.ActionLink("Denizyolu Taşımacılığı", "DenizYoluTasimaciligi", "Hizmetlerimiz")
                     @Html.ActionLink("Silah ve Mühimmat Taşımacılığı", "SilahveMuhimmatTasimaciligi", "Hizmetlerimiz")
                     @Html.ActionLink("Depolama Hizmetleri", "DepolamaHizmetleri", "Hizmetlerimiz")
                     @Html.ActionLink("Sigorta Hizmetleri", "Sigorta", "Hizmetlerimiz")
-
                     @Html.ActionLink("Danışmanlık Hizmetleri", "Danismanlik", "Hizmetlerimiz")
                 </div>
                 <div style="font-size:1rem;">
                     <h2>İletişim</h2>
-
                     <address class="flex_items" style="font-size:1rem !important;">
                         <span class="flex_items_col">
                             <span class="flex_items">
@@ -68,32 +64,28 @@
                                 <span>
                                     MASLAK MAH. AOS 55. SK. 42 MASLAK B BLOK NO: 4 İÇ KAPI NO: 542 SARIYER
                                     İSTANBUL/TÜRKİYE
-
                                 </span>
                             </span>
                             <span class="flex_items">
-
                                 <i class="fi fi-sr-phone-call"></i>
                                 <span>+90 535 817 53 98</span>
                             </span>
                             <span class="flex_items">
-
                                 <i class="fi fi-sr-envelope"></i>
                                 <span>
                                     <a href="mailto:info@ismlogistic.com.tr">info@ismlogistic.com.tr</a><br />
                                 </span>
                             </span>
-
                         </span>
-
                     </address>
                 </div>
             </footer> 
             <div style="margin-top:20rem;">&copy; @DateTime.Now.Year - ISM Logistics</div>
-            <div>Made by <a style="color:black;text-decoration:none;" target="_blank" href="https://github.com/omerirmakk">Omer</a></div>
+            <div class="github_hover">Made by <a target="_blank" href="https://github.com/omerirmakk">Omerirmakk</a></div>
         </div> 
     </div>
-    <script src="~/Content/Jscript.js"></script>
+    <script src="~/Content/Jscript.js">
+    </script>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

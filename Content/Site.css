@@ -130,11 +130,11 @@ footer > div:nth-child(2) {
 
 .sub-links {
     display: none;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,1);
     width: 100%;
     position: absolute;
     border-radius: 5px 5px 10px 10px;
-    padding: 5px;
+    padding: 10px;
     font-size: 16px !important;
     font-weight: 200 !important;
 }
@@ -145,7 +145,6 @@ footer > div:nth-child(2) {
     gap:10px;
     padding:5px;   
     
-    background-color:gray;
 }
 .sub-links a{
     font-size:16px;
@@ -157,17 +156,19 @@ footer > div:nth-child(2) {
    
  }
 
-    
-
 .bg-nav{
-     background-color: rgb(200, 200, 200) !important;
+    opacity:1;
      border-radius: 20px;
      transition:ease-in .9s;
      z-index:9999999;
  }
-
-
-
+.github_hover a{
+    color:black;
+    text-decoration:none;
+}
+.github_hover a:hover {
+    color: #B61E03 !important;
+}
 /* extra*/
 svg {
     width: 100%;
@@ -198,3 +199,4 @@ svg {
         transform: scale(3) rotate(0deg);
     }
 }
+
